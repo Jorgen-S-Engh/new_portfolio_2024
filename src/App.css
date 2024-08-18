@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* .lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ */
+
+ body{
+  margin: 0px;
+ }
+
+ html {
+  scroll-behavior: smooth;
+  
+}
+:root{
+  --main-bg: #000000;
+  --main-color: #FD6C03;
+  --main-color-active: #ff8e3d;
+  --card-bg: #1d1d1d;
+  --about-me-header: #1E1E1E;
+  --header-bg: #121212;
+  --main-text: #FFFFFF;
+  --sec-text: #aaaaaaa7;
+}
+
+html {
+  background-color: var(--main-bg);
+  color: var(--main-text)
+}
+
+.main-button {
+  font-family:"Poppins";
+  font-weight: 700;
+  background-color: transparent;
+  border: solid 2px var(--main-color);
+  border-radius: 15px;
+  color: var(--main-text);
+  height: 50px;
+  width: 150px;
+  cursor: pointer; 
+  transition: color 0.3s; 
+
+}
+
+.main-button:hover {
+  color: var(--main-color);
+}
+
+.main-button:active {
+  border: solid 2px var( --main-color-active);
+  color: var(--main-color-active)
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-bg);
+  font-family: "Lato";
+  color: var(--sec-text);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0px;
+  max-width: 400px;
+}
+
+.main-headline{
+  font-family: "Poppins";
+  color: var(--main-color);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.sec-headline{
+  font-family: "Poppins";
+  font-size: 1.5rem;
+}
+
+.main-text{
+  font-family:"Lato";
+  color: var(--main-text)
+}
+
+.card-headline{
+  color: var(--main-text);
+  font-family: "Poppins";
+}
+
+.project-description{
+  text-align: center;
+  max-width: 75%;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+a:link, a:visited{
+  color: var(--main-text);
+  text-decoration: none;
+}
+
+.github-icon__container{
+  margin:20px;
+}
+
+
+.github-icon, .tech-icon{
+  color: var(--main-color);
+  font-size: 2rem;
+  transition: color 0.3s;
+}
+.github-icon:hover{
+  color: var(--main-color-active)
+}
+
+.about-me-text{
+  font-family: "Lato";
+  color:var(rgb(198, 198, 198));
+  line-height: 25px;
+  width: 65%;
+}
+
+.about-me__container{
+  background-color: var(--about-me-header);
+  width: 100%;
+}
+
+.profile-img{
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  transform: scaleX(-1);
+  background-color: var(--card-bg);
+  max-width: 300px;
+}
+
+.header-button{
+  color: var(--main-color)!important;
+  font-weight: bold!important;
+  font-family: "Poppins"!important;
+}
+
+li::marker {
+  color: var(--main-color)
+}
+
+.MuiTableCell-root{
+  font-family: "Poppins" !important;
+  font-weight: bold !important;
+}
+
+
+
+
