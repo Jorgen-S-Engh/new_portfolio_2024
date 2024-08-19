@@ -15,6 +15,7 @@ import Education from "./components/Education";
 import OtherExperiance from "./components/OtherExperiance";
 import Bio from "./components/Bio";
 import Links from "./components/Links";
+import LetsCoffee from "./components/LetsCoffee";
 
 function App() {
   return (
@@ -45,20 +46,11 @@ function App() {
               sx={{
                 display: "flex",
                 width: "100%",
+                backgroundColor: "#0D0D0D",
               }}
             >
               <Education />
               <OtherExperiance />
-            </Box>
-            <Box
-              sx={{
-                display: "flex",
-                width: "100%",
-                justifyContent: "center",
-              }}
-            >
-              <Bio />
-              <Links />
             </Box>
           </section>
           <section id="projects">
@@ -121,6 +113,22 @@ function App() {
                 </Card>
               ))}
             </Box>
+          </section>
+          <section style={{ width: "100%" }}>
+            <Box>
+              <h3 className="main-headline">Contact</h3>
+              <Box
+                sx={{
+                  display: "flex",
+                  width: "100%",
+                  justifyContent: "center",
+                }}
+              >
+                <Bio />
+                <Links />
+              </Box>
+            </Box>
+            <LetsCoffee />
           </section>
         </Box>
       </ThemeProvider>

@@ -1,9 +1,11 @@
 import { Button } from "@mui/material";
 
-function MainButton({ children }) {
+function MainButton({ children, onClick }) {
   return (
     <>
-      <button className="main-button">{children}</button>
+      <button className="main-button" onClick={onClick}>
+        {children}
+      </button>
     </>
   );
 }
