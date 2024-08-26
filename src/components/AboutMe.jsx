@@ -41,7 +41,7 @@ function AboutMe({ children }) {
         }}
       >
         <h2 className="main-headline">Skills</h2>
-        {/* <WordCloud /> */}
+        <WordCloud />
       </Grid>
     </Grid>
   );
