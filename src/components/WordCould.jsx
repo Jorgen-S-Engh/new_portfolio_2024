@@ -38,8 +38,8 @@ const data = [
 
 function WordCloud() {
   return (
-    <Box>
-      <div style={{ width: 450 }}>
+    <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
+      <div style={{ width: "100%", maxWidth: "450px", marginTop: "-75px" }}>
         <ReactWordCloud
           data={data}
           rotate={0}
