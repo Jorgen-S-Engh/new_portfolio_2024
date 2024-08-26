@@ -12,7 +12,6 @@ function AboutMe({ children }) {
       sx={{
         display: "flex",
         justifyContent: "center",
-        borderRadius: "5px",
         width: "100%",
       }}
     >

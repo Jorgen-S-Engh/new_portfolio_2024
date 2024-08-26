@@ -3,20 +3,23 @@ import ProfileImg from "./ProfileImg";
 import MainButton from "./MainButton";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleDown } from "@fortawesome/free-solid-svg-icons";
+import { Grid } from "@mui/material";
 
 function Hero() {
   return (
     <>
-      <Box
+      <Grid
+        container
+        spacing={3}
         sx={{
           display: "flex",
-          justifyContent: "center",
-          gap: 10,
           backgroundColor: "#0D0D0D",
-          width: "100%",
         }}
       >
-        <Box
+        <Grid
+          item
+          md={6}
+          xs={12}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -37,11 +40,20 @@ function Hero() {
               />
             </MainButton>
           </a>
-        </Box>
-        <Box>
+        </Grid>
+        <Grid
+          item
+          md={6}
+          xs={12}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "10px",
+          }}
+        >
           <ProfileImg />
-        </Box>
-      </Box>
+        </Grid>
+      </Grid>
     </>
   );
 }
