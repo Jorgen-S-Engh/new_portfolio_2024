@@ -14,7 +14,6 @@ function getBirthday() {
   if (today.getMonth() < birthday.getMonth()) {
     age -= 1;
   }
-
   return age;
 }
 const age = getBirthday();

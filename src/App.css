@@ -6,8 +6,12 @@ html {
   scroll-behavior: smooth;
   background-color: var(--main-bg);
   color: var(--main-text);
-
+  max-width: 2000px;
+  margin: 0 auto;
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
 }
 
