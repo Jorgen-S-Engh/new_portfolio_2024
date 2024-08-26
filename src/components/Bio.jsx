@@ -2,7 +2,6 @@ import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import { Box } from "@mui/material";
 
@@ -21,7 +20,7 @@ const age = getBirthday();
 function Bio() {
   return (
     <>
-      <Box sx={{ width: "50%" }}>
+      <Box>
         <h3 className="main-headline">Info</h3>
         <TableContainer>
           <Table sx={{ fontFamily: "Poppins" }}>

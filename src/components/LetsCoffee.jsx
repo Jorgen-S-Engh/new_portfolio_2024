@@ -2,19 +2,17 @@ import MainButton from "./MainButton";
 import { Box } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMugHot } from "@fortawesome/free-solid-svg-icons";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import { Grid } from "@mui/material";
 
 const LetsCoffee = () => {
   const [height, setHeight] = useState("0px");
   const [shake, setShake] = useState(false);
 
-  useEffect(() => {
-    console.log(height);
-  }, [height]);
-
   return (
     <>
-      <Box
+      <Grid
+        container
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -32,7 +30,7 @@ const LetsCoffee = () => {
           icon={faMugHot}
         />
 
-        <Box
+        <Grid
           sx={{
             height: height,
             overflow: "hidden",
@@ -49,7 +47,7 @@ const LetsCoffee = () => {
           <a className="main-text" href="tel:+4747079986">
             +47 47079986
           </a>
-        </Box>
+        </Grid>
         <MainButton
           onClick={() => {
             console.log("button clicked");
@@ -60,7 +58,7 @@ const LetsCoffee = () => {
         >
           Contact Me
         </MainButton>
-      </Box>
+      </Grid>
     </>
   );
 };

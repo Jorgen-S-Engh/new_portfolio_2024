@@ -139,16 +139,29 @@ function App() {
           >
             <Box>
               <h3 className="main-headline">Contact</h3>
-              <Box
+              <Grid
+                container
                 sx={{
                   display: "flex",
                   width: "100%",
                   justifyContent: "center",
                 }}
               >
-                <Bio />
-                <Links />
-              </Box>
+                <Grid
+                  md={6}
+                  xs={12}
+                  sx={{ display: "flex", justifyContent: "center" }}
+                >
+                  <Bio />
+                </Grid>
+                <Grid
+                  md={6}
+                  xs={12}
+                  sx={{ display: "flex", justifyContent: "center" }}
+                >
+                  <Links />
+                </Grid>
+              </Grid>
             </Box>
             <LetsCoffee />
           </section>
