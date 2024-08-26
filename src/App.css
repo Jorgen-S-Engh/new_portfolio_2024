@@ -5,12 +5,15 @@
 html {
   scroll-behavior: smooth;
   background-color: var(--main-bg);
-  color: var(--main-text)
+  color: var(--main-text);
+
+  overflow-x: hidden;
 
 }
 
 body{
   margin: 0px;
+
 }
 :root{
   --main-bg: #000000;
