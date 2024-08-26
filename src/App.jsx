@@ -133,7 +133,10 @@ function App() {
               ))}
             </Box>
           </section>
-          <section style={{ width: "100%" }}>
+          <section
+            id="contact"
+            style={{ width: "100%", scrollMarginTop: "65px" }}
+          >
             <Box>
               <h3 className="main-headline">Contact</h3>
               <Box
