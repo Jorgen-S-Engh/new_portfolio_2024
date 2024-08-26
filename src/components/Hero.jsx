@@ -10,7 +10,6 @@ function Hero() {
     <>
       <Grid
         container
-        spacing={3}
         sx={{
           display: "flex",
           backgroundColor: "#0D0D0D",
@@ -25,6 +24,7 @@ function Hero() {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
+            marginBottom: "20px",
           }}
         >
           <h1 style={{ marginBottom: "-20px" }} className="sec-headline">

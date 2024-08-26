@@ -20,7 +20,13 @@ import { Grid } from "@mui/material";
 
 function App() {
   return (
-    <>
+    <Box
+      sx={{
+        maxWidth: "2000px",
+        margin: "0 auto",
+        marginBottom: "1000px;",
+      }}
+    >
       <ThemeProvider theme={theme}>
         <section id="home"></section>
         <HeaderMenu />
@@ -32,7 +38,10 @@ function App() {
           }}
         >
           <Hero />
-          <section id="about" style={{ width: "100%" }}>
+          <section
+            id="about"
+            style={{ width: "100%", scrollMarginTop: "65px" }}
+          >
             <AboutMe>
               I finished a two year higher professional degree in
               frontend-development in the spring of 2023. I have a masterdegree
@@ -60,7 +69,10 @@ function App() {
               </Grid>
             </Grid>
           </section>
-          <section id="projects">
+          <section
+            id="projects"
+            style={{ width: "100%", scrollMarginTop: "65px" }}
+          >
             <h3 className="main-headline">Projects</h3>
             <Box
               sx={{
@@ -139,7 +151,7 @@ function App() {
           </section>
         </Box>
       </ThemeProvider>
-    </>
+    </Box>
   );
 }
 

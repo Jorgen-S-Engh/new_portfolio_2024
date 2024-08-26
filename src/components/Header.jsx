@@ -5,7 +5,12 @@ function HeaderMenu() {
   return (
     <AppBar
       position="sticky"
-      sx={{ backgroundColor: "transparent", border: "0px", boxShadow: "none" }}
+      sx={{
+        backgroundColor: "transparent",
+        border: "0px",
+        boxShadow: "none",
+        bgcolor: "#000000",
+      }}
     >
       <Toolbar>
         <Typography sx={{ flexGrow: 1 }}></Typography>
