@@ -2,10 +2,12 @@ import Box from "@mui/material/Box";
 
 import ProfileImg from "./ProfileImg";
 import WordCloud from "./WordCould";
+import Grid from "@mui/material/Grid";
 
 function AboutMe({ children }) {
   return (
-    <Box
+    <Grid
+      container
       className="about-me__container"
       sx={{
         display: "flex",
@@ -14,7 +16,10 @@ function AboutMe({ children }) {
         width: "100%",
       }}
     >
-      <Box
+      <Grid
+        item
+        xs={12}
+        md={6}
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -24,8 +29,11 @@ function AboutMe({ children }) {
       >
         <h2 className="main-headline">About me</h2>
         <p className="about-me-text">{children}</p>
-      </Box>
-      <Box
+      </Grid>
+      <Grid
+        item
+        xs={12}
+        md={6}
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -35,8 +43,8 @@ function AboutMe({ children }) {
       >
         <h2 className="main-headline">Skills</h2>
         <WordCloud />
-      </Box>
-    </Box>
+      </Grid>
+    </Grid>
   );
 }
 

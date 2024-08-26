@@ -16,13 +16,14 @@ import OtherExperiance from "./components/OtherExperiance";
 import Bio from "./components/Bio";
 import Links from "./components/Links";
 import LetsCoffee from "./components/LetsCoffee";
+import { Grid } from "@mui/material";
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
         <section id="home"></section>
-        <HeaderMenu></HeaderMenu>
+        <HeaderMenu />
         <Box
           sx={{
             display: "flex",
@@ -30,7 +31,7 @@ function App() {
             alignItems: "center",
           }}
         >
-          <Hero></Hero>
+          <Hero />
           <section id="about" style={{ width: "100%" }}>
             <AboutMe>
               I finished a two year higher professional degree in
@@ -42,16 +43,22 @@ function App() {
               possible as a developer. Feel free to check out my portfolio, and
               contact me regarding anything.
             </AboutMe>
-            <Box
+            <Grid
+              container
               sx={{
                 display: "flex",
                 width: "100%",
                 backgroundColor: "#0D0D0D",
+                justifyContent: "center",
               }}
             >
-              <Education />
-              <OtherExperiance />
-            </Box>
+              <Grid item md={6} xs={12}>
+                <Education />
+              </Grid>
+              <Grid item md={6} xs={12}>
+                <OtherExperiance />
+              </Grid>
+            </Grid>
           </section>
           <section id="projects">
             <h3 className="main-headline">Projects</h3>

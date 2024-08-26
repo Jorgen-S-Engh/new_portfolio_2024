@@ -4,7 +4,6 @@ function OtherExperiance() {
     <>
       <Box
         sx={{
-          width: "50%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
