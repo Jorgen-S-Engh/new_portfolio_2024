@@ -42,7 +42,7 @@ function App() {
             id="about"
             style={{ width: "100%", scrollMarginTop: "65px" }}
           >
-            <AboutMe>
+            {/* <AboutMe>
               I finished a two year higher professional degree in
               frontend-development in the spring of 2023. I have a masterdegree
               in political science, and I have experience working as a project
@@ -51,7 +51,7 @@ function App() {
               specializing in cyber defence. My goal is to advance as much as
               possible as a developer. Feel free to check out my portfolio, and
               contact me regarding anything.
-            </AboutMe>
+            </AboutMe> */}
             <Grid
               container
               sx={{
