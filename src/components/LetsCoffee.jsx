@@ -41,6 +41,7 @@ const LetsCoffee = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
+            justifyContent: "start",
             gap: "10px",
           }}
         >

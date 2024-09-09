@@ -85,7 +85,7 @@ function App() {
                   display: "flex",
                   width: "100%",
                   justifyContent: "center",
-                  alignItems: "center",
+
                   gap: 2,
                 }}
               >
@@ -105,9 +105,13 @@ function App() {
                   md={4}
                   s={6}
                   xs={12}
-                  sx={{ display: "flex", justifyContent: "center" }}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignSelf: "start",
+                  }}
                 >
-                  <LetsCoffee />
+                  <Links />
                 </Grid>
                 <Grid
                   item
@@ -115,9 +119,13 @@ function App() {
                   md={4}
                   s={6}
                   xs={12}
-                  sx={{ display: "flex", justifyContent: "center" }}
+                  sx={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignSelf: "start",
+                  }}
                 >
-                  <Links />
+                  <LetsCoffee />
                 </Grid>
               </Grid>
             </Box>
