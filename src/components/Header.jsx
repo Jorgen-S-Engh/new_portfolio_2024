@@ -21,11 +21,11 @@ function HeaderMenu() {
           <Button className="header-button" href="#about">
             About
           </Button>
-          <Button className="header-button" href="#projects">
-            Projects
-          </Button>
           <Button className="header-button" href="#contact">
             Contact
+          </Button>
+          <Button className="header-button" href="#projects">
+            Projects
           </Button>
         </Box>
       </Toolbar>
