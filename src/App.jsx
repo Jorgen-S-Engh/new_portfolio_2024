@@ -24,7 +24,7 @@ function App() {
       sx={{
         maxWidth: "2000px",
         margin: "0 auto",
-        marginBottom: "1000px;",
+        marginBottom: "300px;",
       }}
     >
       <ThemeProvider theme={theme}>
