@@ -70,6 +70,59 @@ function App() {
             </Grid>
           </section>
           <section
+            id="contact"
+            style={{
+              width: "100%",
+              scrollMarginTop: "65px",
+              margin: "20px 0px",
+            }}
+          >
+            <Box>
+              {/* <h3 className="main-headline">Contact</h3> */}
+              <Grid
+                container
+                sx={{
+                  display: "flex",
+                  width: "100%",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: 2,
+                }}
+              >
+                <Grid
+                  item
+                  lg={3}
+                  md={4}
+                  s={6}
+                  xs={12}
+                  sx={{ display: "flex", justifyContent: "center" }}
+                >
+                  <Bio />
+                </Grid>
+                <Grid
+                  item
+                  lg={3}
+                  md={4}
+                  s={6}
+                  xs={12}
+                  sx={{ display: "flex", justifyContent: "center" }}
+                >
+                  <LetsCoffee />
+                </Grid>
+                <Grid
+                  item
+                  lg={3}
+                  md={4}
+                  s={6}
+                  xs={12}
+                  sx={{ display: "flex", justifyContent: "center" }}
+                >
+                  <Links />
+                </Grid>
+              </Grid>
+            </Box>
+          </section>
+          <section
             id="projects"
             style={{ width: "100%", scrollMarginTop: "65px" }}
           >
@@ -132,38 +185,6 @@ function App() {
                 </Card>
               ))}
             </Box>
-          </section>
-          <section
-            id="contact"
-            style={{ width: "100%", scrollMarginTop: "65px" }}
-          >
-            <Box>
-              <h3 className="main-headline">Contact</h3>
-              <Grid
-                container
-                sx={{
-                  display: "flex",
-                  width: "100%",
-                  justifyContent: "center",
-                }}
-              >
-                <Grid
-                  md={6}
-                  xs={12}
-                  sx={{ display: "flex", justifyContent: "center" }}
-                >
-                  <Bio />
-                </Grid>
-                <Grid
-                  md={6}
-                  xs={12}
-                  sx={{ display: "flex", justifyContent: "center" }}
-                >
-                  <Links />
-                </Grid>
-              </Grid>
-            </Box>
-            <LetsCoffee />
           </section>
         </Box>
       </ThemeProvider>

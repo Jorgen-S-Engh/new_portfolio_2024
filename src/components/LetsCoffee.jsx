@@ -1,7 +1,11 @@
 import MainButton from "./MainButton";
 import { Box } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMugHot } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMugHot,
+  faPhone,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { Grid } from "@mui/material";
 
@@ -18,7 +22,6 @@ const LetsCoffee = () => {
           flexDirection: "column",
           alignItems: "center",
           gap: 2,
-          marginBottom: "100px",
         }}
       >
         <h3 style={{ marginBottom: "0px" }} className="sec-headline">
@@ -41,12 +44,28 @@ const LetsCoffee = () => {
             gap: "10px",
           }}
         >
-          <a className="main-text" href="mailto:jorgen.we@outlook.com">
-            jorgen.we@outlook.com
-          </a>
-          <a className="main-text" href="tel:+4747079986">
-            +47 47079986
-          </a>
+          <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            <a className="main-text" href="mailto:jorgen.we@outlook.com">
+              <Box sx={{ display: "flex", gap: 2 }}>
+                <Box>
+                  <FontAwesomeIcon
+                    icon="fa-solid fa-envelope"
+                    color="#FD6C03"
+                  />
+                </Box>
+                <Box variant="span">jorgen.we@outlook.com</Box>
+              </Box>
+            </a>
+            <a className="main-text" href="tel:+4747079986">
+              <Box sx={{ display: "flex", gap: 2 }}>
+                <Box>
+                  <FontAwesomeIcon icon="fa-solid fa-phone" color="#FD6C03" />
+                </Box>
+
+                <Box variant="span">47079986</Box>
+              </Box>
+            </a>
+          </Box>
         </Grid>
         <MainButton
           onClick={() => {
