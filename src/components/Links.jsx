@@ -10,13 +10,12 @@ function Links() {
       <Grid
         container
         sx={{
-          width: "50%",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
         }}
       >
-        <h3 className="main-headline">Links</h3>
+        <h3 className="main-headline">Additinal Links</h3>
         <Grid sx={{ display: "flex", gap: 2 }}>
           <a
             href="https://www.linkedin.com/in/j%C3%B8rgen-wiksaas-engh-902669100/"

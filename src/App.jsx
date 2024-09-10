@@ -78,51 +78,30 @@ function App() {
             }}
           >
             <Box>
-              {/* <h3 className="main-headline">Contact</h3> */}
               <Grid
                 container
                 sx={{
                   display: "flex",
                   width: "100%",
-                  justifyContent: "center",
+                  // justifyContent: "center",
 
-                  gap: 2,
+                  // gap: 2,
                 }}
               >
                 <Grid
                   item
-                  lg={3}
-                  md={4}
-                  s={6}
-                  xs={12}
+                  lg={6}
                   sx={{ display: "flex", justifyContent: "center" }}
                 >
                   <Bio />
                 </Grid>
+
                 <Grid
                   item
-                  lg={3}
-                  md={4}
-                  s={6}
-                  xs={12}
+                  lg={6}
                   sx={{
                     display: "flex",
                     justifyContent: "center",
-                    alignSelf: "start",
-                  }}
-                >
-                  <Links />
-                </Grid>
-                <Grid
-                  item
-                  lg={3}
-                  md={4}
-                  s={6}
-                  xs={12}
-                  sx={{
-                    display: "flex",
-                    justifyContent: "center",
-                    alignSelf: "start",
                   }}
                 >
                   <LetsCoffee />
@@ -194,6 +173,20 @@ function App() {
               ))}
             </Box>
           </section>
+          <Box>
+            <Box
+              lg={3}
+              md={4}
+              s={6}
+              xs={12}
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignSelf: "start",
+              }}
+            ></Box>
+            <Links />
+          </Box>
         </Box>
       </ThemeProvider>
     </Box>
