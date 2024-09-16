@@ -83,14 +83,13 @@ function App() {
                 sx={{
                   display: "flex",
                   width: "100%",
-                  // justifyContent: "center",
-
-                  // gap: 2,
                 }}
               >
                 <Grid
                   item
                   lg={6}
+                  md={6}
+                  xs={12}
                   sx={{ display: "flex", justifyContent: "center" }}
                 >
                   <Bio />
@@ -99,6 +98,8 @@ function App() {
                 <Grid
                   item
                   lg={6}
+                  md={6}
+                  xs={12}
                   sx={{
                     display: "flex",
                     justifyContent: "center",
