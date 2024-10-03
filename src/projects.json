@@ -40,7 +40,7 @@
         "title": "Holidaze",
         "description": "This is my final project exam. The assignment was to create a site for the fictitious accommodation booking site called Holidaze.",
         "image": "/assets/Holidaze.jpg",
-        "link": "https://lovely-starburst-3ddc3e.netlify.app/login",
+        "link": "https://lovely-starburst-3ddc3e.netlify.app/",
         "github": "https://github.com/Jorgen-S-Engh/Project_exam_2_J-rgen_Engh",
         "tech": ["React", "Sass"]
     }
